@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Diary</title>
     <link rel="stylesheet" href="../Styles/main.css">
+    <title>Code Diary</title>
 </head>
 
 <!-- Want to make a Dark and Light Mode Switch, Initially will be presented as Dark-->
@@ -18,7 +18,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
                 <li><a href="#" class="nav-link" data-page="html">HTML</a></li>
                 <li><a href="#" class="nav-link" data-page="css">CSS</a></li>
                 <li><a href="#" class="nav-link" data-page="javascript">Javascript</a></li>
@@ -33,39 +33,467 @@
             <button class="mode-toggle-btn" id="mode-toggle">Switch to Light Mode</button>
         </div>
 
-        <section id="home" class="">
+        <section id="home" class="page active">
             <h1>Welcome to Code Diary!</h1>
-            <p>Sample Text</p>
+            <p>Code Diary is your personal coding knowledge repository and growing reference guide for web development technologies.</p>
+            <p>This site features comprehensive notes and practical examples on essential web technologies including:</p>
+            
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+            
+            <p>I'm continuously updating this diary with new information and topics to create a valuable learning resource.</p>
+            
+            <p><strong>Note:</strong> Dark mode is currently enabled by default. I'm working on implementing a light/dark mode toggle feature soon—stay tuned for updates!</p>
         </section>
 
-        <section id="html" class="">
+        <!--HTML Page Content-->
+
+        <section id="html" class="page">
             <h1>HTML Notes</h1>
-            <p>Sample Text</p>
+            <h3>Key Concepts: Document structure, tags, elements, and attributes</h3>
+            <ul>
+                <li>Elements are Instructions to the browser.</li>
+                    <img src="../Images/HTML1.png" alt="Display Example of Various Elements" class="Note-pics">
+
+                <li>Elements can contain text, but they can also contain other elements</li>
+
+                <ul>
+                    <li>In the example shown here, we would say the paragraph element contains the emphasis element. <br>
+                       Or we can say that the emphasis element is a <strong>child of the paragraph element.</strong></li>
+                    <li>People refer to this as <strong>child-parent relationships</strong> or <strong>nested relationships.</strong></li>
+                    <li>Any element that contains another element is said to be the <strong>parent of other elements.</strong> <br>
+                     Those contained elements are called its children.</li>
+                    <li>These elements form a <strong>tree structure</strong> like a family tree. </li>
+                    <li>Languages like CSS and JavaScript can access and manipulate this structure to create dynamic and interactive content.</li>
+                    <img src="../Images/HTML2.png" alt="Parent/Nested Element Display" class="Note-pics">
+                </ul>
+            </ul>
+
+            <ul>
+                <li>The <strong>paragraph element</strong> is one of the most commonly used elements, and as you might guess it defines a paragraph.
+                    <ul>
+                        <li>As with print media a paragraph creates a space above and below it to visually separate it from other content.</li>
+                        <li>Paragraphs and headings work in concert to create the majority of text content on a web page.</li>
+                        <img src="../Images/HTML3.png" alt="Paragraph Element" class="Element-pics">
+                    </ul>
+                </li>
+                
+                <li>HTML has <strong>six heading</strong> elements, which are numbered 1 to 6. &lt;h1&gt; is the most significant, and usually contains the title of the content. &lt;h2&gt; represents a section, while &lt;h3&gt; and so on represent identifiers for further subsections.</li>
+                <img src="../Images/HTML4.png" alt="Heading Element" class="Note-pics">
+                
+                <li>Lists can be divided into <strong>two types</strong>; unordered and ordered.
+                    <ul>
+                        <li>Unordered lists display as <strong>bullet points</strong>. The order of the bullet points is deemed unimportant.
+                            <ul>
+                                <li>An example might be the list of ingredients on a recipe.</li>
+                            </ul>
+                        </li>
+                        <li>However, the order of the recipe preparation steps usually matters. So, we would use an ordered list to represent these instructions.</li>
+                        <img src="../Images/HTML5.png" alt="List Element" class="Element-pics">
+                    </ul>
+                </li>
+
+                <li>Elements that <strong>create the spacing below</strong> themselves are called block elements.</li>
+                <li>Block elements are HTML tags that are used to create a container for a specific type of content. These elements take up the full width of their parent container and create a new block formatting context.</li>
+                <li>Examples of block elements include:
+                    <ul>
+                        <li>headings (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.)</li>
+                        <li>paragraphs (&lt;p&gt;)</li>
+                        <li>divisions (&lt;div&gt;)</li>
+                        <li>lists (&lt;ul&gt;, &lt;ol&gt;)</li>
+                        <li>tables (&lt;table&gt;)</li>
+                        <li>images (&lt;img&gt;)</li>
+                        <li>and many more.</li>
+                    </ul>
+                </li>
+                <li>Block elements are often used to create structure and organization on a web page and can be styled using CSS to control the layout and appearance.</li>
+                
+                <li>Inline elements are elements that <strong>don't</strong> cause a line break below their display.</li>
+                <li>Take the example shown.
+                    <ul>
+                        <li>There's an <strong>emphasis tag</strong> and a <strong>strong tag</strong> for italicizing or emphasizing and making something bold.</li>
+                        <li>The reason why they don't introduce a line break below is that you may want to emphasize or make bold some text within a paragraph in order to stress particular words or phrases, and you'll most often not want to add a line break below the stress text.</li>
+                    </ul>
+                    <img src="../Images/HTML6.png" alt="Element Tags" class="Element-pics">
+                </li>
+                
+                <li><strong>Anchor Element &lt;a&gt; &lt;/a&gt; →</strong>
+                    <ul>
+                        <li>The famous hyperlink element, also known as the anchor, has an attribute that contains the <strong>address</strong> of the HTML resource that it <strong>links</strong> to. In HTML content, links that are supposed to be interacted with use the anchor element.</li>
+                        <li>The anchor element defines an anchor or a specific part of a page that can be linked to and a link ought to go somewhere, so it needs an address.
+                            <ul>
+                                <li>To use the anchor element as a link to another page we use the <strong>href attribute</strong>, which will hold the address of where it needs to go to.</li>
+                                <li>The <strong>href attribute</strong> has as its value the location of the page or resource we'd like to link to. In the example shown here, the link when clicked will take us to google.com and in particular Google's</li>
+                                <img src="../Images/HTML7.png" alt="Anchor Element" class="Element-pics">
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li><strong>Image Element &lt;img&gt; →</strong>
+                    <ul>
+                        <li>The <strong>image tag</strong> is used to display an image on a page.</li>
+                        <li>The image tag is used to define an image on a page. We use the source attribute to link to an image either on our server or somewhere else on the web.</li>
+                        <li>The image also has what's called an <strong>alt attribute</strong>.
+                            <ul>
+                                <li>It's also considered <strong>best practice</strong> to include an alt attribute value on any images you use.</li>
+                                <li>It's because the alt attribute will <strong>display any text</strong> within the attribute. If the image doesn't load or if a vision-impaired user is using a screen reader to visit your site, the screen reader will read the alt tag. So put a description of the image you're adding in this attribute.</li>
+                            </ul>
+                            <img src="../Images/HTML8.png" alt="Image Element" class="Element-pics">
+                        </li>
+                    </ul>
+                </li>
+                
+                <li><strong>Neutral Elements &lt;div&gt; &lt;span&gt; →</strong>
+                    <ul>
+                        <li>Neutral elements such as a div and a span are also included.
+                            <ul>
+                                <li>Not everything can be marked up as semantically as a paragraph or as emphasized text.</li>
+                                <li>Sometimes, an element is needed to group other elements or to allow other information to be attached to a part of a document.</li>
+                            </ul>
+                        </li>
+                        <li>div and span are intentionally <strong>semantically neutral</strong>. That is, they don't mean anything in themselves other than helping to <strong>identify structural areas</strong> on a page.
+                            <ul>
+                                <li>But they can be given meaning to the use of <strong>CSS</strong>.</li>
+                            </ul>
+                        </li>
+                        <img src="../Images/HTML9.png" alt="Nuetral Elements" class="Neutral-pics">
+                    </ul>
+                </li>
+                
+                <li><strong>HTML Entities →</strong>
+                    <ul>
+                        <li>An HTML entity is a piece of text ("string") that begins with an ampersand (&amp;) and ends with a semicolon (;). Entities are frequently used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces). You can also use them in place of other characters that are difficult to type with a standard keyboard.</li>
+                        <div class="note-box">
+                            <div class="note-content">
+                                <strong>Note: Many characters have memorable entities. For example, the entity for the copyright symbol (©) is &amp;copy;. For less memorable characters, such as &amp;#8212; or &amp;#x2014;, you can use a <a style="color: #0563C1;" href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references" target="_blank">reference chart</a> or <a style="color: #0563C1;" href="https://mothereff.in/html-entities" target="_blank">decoder tool</a>.</strong>
+                            </div>
+                        </div>
+                        <li>Some special characters are reserved for use in HTML, meaning that your browser will parse them as HTML code. For example, if you use the less-than (&lt;) sign, the browser interprets any text that follows as a <a style="color: #00ffff;" href="https://developer.mozilla.org/en-US/docs/Glossary/Tag" target="_blank">tag</a>.</li>
+                        <li>To display these characters as text, replace them with their corresponding character entities, as shown in the following table.</li>
+                    </ul>
+                    <table class="html-entities-table">
+                        <thead>
+                            <tr>
+                                <td class="center">Character</td>
+                                <td class="center">Entity</td>
+                                <td class="center">Note</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center">&</td>
+                                <td class="center"><code>&amp;amp;</code></td>
+                                <td>Interpreted as the beginning of an entity or character reference.</td>
+                            </tr>
+                            <tr>
+                                <td class="center">&lt;</td>
+                                <td class="center"><code>&amp;lt;</code></td>
+                                <td>Interpreted as the beginning of a tag.</td>
+                            </tr>
+                            <tr>
+                                <td class="center">&gt;</td>
+                                <td class="center"><code>&amp;gt;</code></td>
+                                <td>Interpreted as the ending of a tag.</td>
+                            </tr>
+                            <tr>
+                                <td class="center">"</td>
+                                <td class="center"><code>&amp;quot;</code></td>
+                                <td>Interpreted as the beginning and end of an attribute's value.</td>
+                            </tr>
+                            <tr>
+                                <td class="center">Non-breaking space</td>
+                                <td class="center"><code>&amp;nbsp;</code></td>
+                                <td>Commonly used to add extra spacing between words or to prevent text from wrapping to the next line.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="nonbreak-box">
+                        <div class="nonbreak-content">
+                            <strong>The HTML entity (non-breaking space) is a character used to create a space in a line of text that cannot be broken into a new line. This is useful for preserving the appearance of text or preventing unwanted line breaks in certain situations.</strong>
+                            <br><br>
+                            <strong>As the size of the window decreases, the text in the quote will stay on one line, preserving its appearance. If the text inside the quote is too long to fit on one line, the whole quote will move to the next line.</strong>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
         </section>
 
-        <section id="css" class="">
+        <!--CSS Page Content-->
+
+        <section id="css" class="page">
             <h1>CSS Notes</h1>
-            <p>Sample Text</p>
+            <h3>Cascading Style Sheets →</h3>
+            <img src="../Images/CSS1.png" alt="Display Example of Various Elements" class="CSS-pics">
+            <h4><strong>Four ways to include CSS in HTML →</strong></h4>
+            
+            <ol>
+                <li><strong>Inline CSS:</strong> This is the most basic and simplest way of including CSS in HTML. You can use the "style" attribute<br>
+                    to add CSS styles to specific HTML elements.
+                    <ul>
+                        <li>When using internal CSS, all the elements that match the CSS selector <br>
+                            (in this case, the <code>&lt;p&gt;</code> elements) will have the specified styles applied to them.</li>
+                        <table>
+                            <tr>
+                                <td>HTML</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;p style="color: blue;"&gt;This is an example of inline CSS.&lt;/p&gt;</code></td>
+                            </tr>
+                        </table>
+                    </ul>
+                </li>
+
+                <br>
+                <br>
+
+                <li><strong>Internal CSS:</strong> You can also include CSS inside the head of your HTML document using the "style" tag.<br>
+                    This is useful when you want to apply styles to multiple elements within a single HTML file.</li>
+                <ul>
+                    <table>
+                        <tr>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td><code>
+                                &lt;head&gt; <br>
+                                 &nbsp;&lt;style&gt;<br>
+                                    &nbsp;&nbsp;/* This is an example of internal CSS */<br>
+                                    &nbsp;&nbsp;p {<br>
+                                      &nbsp;&nbsp;&nbsp;color: blue;<br>
+                                    &nbsp;&nbsp;}<br>
+                                &nbsp;&lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                  &nbsp;&lt;p&gt;This is an example of internal CSS.&lt;/p&gt;<br>
+                                &lt;/body&gt;</code></td>
+                        </tr>
+                    </table>
+                </ul>
+
+                <br>
+                <br>
+
+                <li><strong>External CSS:</strong> You can also create a separate CSS file and link it to your HTML document using the "link" tag.<br>
+                    This is useful when you want to apply the same styles to multiple HTML files.
+                    <ul>
+                        <li>When using external CSS, all the elements that match the selectors in the external CSS file will have the corresponding styles applied to them. 
+                            The external CSS file is linked to the HTML document using the <strong>link</strong> tag, which should be placed in the  
+                            <code>&lt;head&gt;</code> section of the HTML document.</li>
+                        <table>
+                            <tr>
+                                <td>HTML</td>
+                            </tr>
+                            <tr>
+                                <td><code>
+                                    &lt;!--This is an example of linking an external CSS file--&gt;<br>
+                                    &lt;head&gt;<br>
+                                        &nbsp;&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;<br>
+                                    &lt;/head&gt;
+                                </code></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>CSS</td>
+                            </tr>
+                            <tr>
+                                <td><code>
+                                    /*This is an example of an external CSS file*/<br>
+                                    p {<br>
+                                    &nbsp;color: blue;<br>
+                                    }
+                                </code></td>
+                            </tr>
+                        </table>
+                    </ul>
+                </li>
+
+                <br>
+                <br>
+
+                <li><strong>CSS in Javascript:</strong> You can use JavaScript to apply CSS styles to elements, this is useful in dynamic webpages that change often.
+                    <ul>
+                        <table>
+                            <tr>
+                                <td>HTML</td>
+                            </tr>
+                            <tr>
+                                <td><code>
+                                    &lt;p id="example"&gt;This is an example of CSS in JavaScript.&lt;/p&gt;
+                                </code></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td>Javascript</td>
+                            </tr>
+                            <tr>
+                                <td><code>
+                                    //This is an example of applying CSS using JavaScript<br>
+                                    var element = document.getElementById("example");<br>
+                                    element.style.color = "blue";<br>
+                                </code></td>
+                            </tr>
+                        </table>
+                    </ul>
+                </li>
+
+                <br>
+                <br>
+            </ol>
+
+            <h3><strong>ID Attribute →</strong></h3>
+                <ul>
+                    <li>HTML elements can have what are called <strong>attributes</strong> these are additional pieces of information that describe an element and all elements can be <strong>uniquely identified</strong> on a page by means of an <strong>ID</strong> attribute.
+                        <ul>
+                            <li>So why would you want to do this well you might have a button on your page that acts as a call to action maybe it's an invitation to make a purchase or register on the application, there also might be other buttons on the page.</li>
+                        </ul>
+                    </li>
+        
+                    <li>In order to make this call to actions, stand out from the others, you don't want to give it its own unique styling, <br>
+                        an <strong>ID selector working with an elements ID attribute</strong> let you do just this.</li>
+        
+                    <li><span style="color: #C00000;">The ID selector consists of a <strong>hash symbol followed by the ID name.</strong></span>
+                        <ul>
+                            <li>The example shown we have two paragraphs on our page one of the paragraphs uses its id attribute and assigns a value of my element to the ID.</li>
+                            <li>We have a style rule in the head of the page, look at the selector name it doesn't refer to any HTML element by type, that is it doesn't refer to a paragraph or a h1 or an image tag, it refers to an ID and if there's some element in the body of that page that matches the ID then that element will be targeted.</li>
+                            <li>How do we know it's an ID rule? Notice that the selector spelling matches the id value of the first paragraph, but it also adds a hash symbol to the beginning of the ID name.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="wide">
+                    <img src="../Images/CSS2.png" alt="Display Example of ID Attribute">
+                </div>
+
+            <br>
+            <br>
+
+            <h3><strong>Class Attribute →</strong></h3>
+                <ul>
+                    <li>Class attribute don't have to be unique throughout the document.</li>
+
+                    <li><span style="color: #C00000;">Class attribute don't have to be unique throughout the document.</span>
+                        <ul>
+                            <li>The example shown in the approach is similar to what we saw when styling an ID selector, the difference is that we place a period rather than a hashtag in front of the selector name.</li>
+                            <li>We also use the class attribute instead of the ID attribute. </li>
+                            <li><strong>Two</strong> things to note here though the first is that different element types can be part of the <strong>same target class.</strong></li>
+                            <li>Here we are applying the same style to a heading and the paragraph secondly there's nothing stopping us from using the ID and the class attributes on the same element.</li>
+                        </ul>
+                    </li>
+        
+                    <li>An element may <strong>share styles</strong> in common with some others but might also require some added uniqueness.</li>
+                </ul>
+                <div class="wide">
+                    <img src="../Images/CSS3.png" alt="Display Example of Class Attribute">
+                </div>
+            
+            <br>
+
+            <h3>Display Modification →</h3>
+            <h4>Responsive Design →</h4>
+            <ul>
+                <li>Responsive design is the process of building a website that will automatically adjust and adapt to the screen size of whatever device the user is on.</li>
+                <li>Current websites must have the ability to optimize the screen size of a device, whether it is a desktop, a laptop, tablet, or mobile phone.</li>
+                
+                <li>As screen sizes become smaller, content starts to take up more vertical space.</li>
+                <li>And anything wider than say, a desktop screen is usually pushed down when viewed on smaller devices, it's called <strong>flow</strong>.</li>
+                
+                <li>The <strong>viewport</strong> can be a desktop, mobile screen, or anything in between.</li>
+                <li>So, we need <strong>units</strong> that are <strong>flexible</strong> and work everywhere. That's where relative units like <strong>percentages</strong> come in handy.
+                    <ul>
+                        <li>For example:
+                            <ul>
+                                <li>Setting an image to 600 pixels wide will result in it being too big to be shown properly on a smartphone screen.</li>
+                                <li>But setting the image to be, say 50%, means it will always take half the screen no matter what device it is displayed on.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li><strong>Breakpoints</strong> allow the layout to change a predefined point.
+                    <ul>
+                        <li>For example, you might have 4 columns of content visible on a desktop or laptop but only one column displayed on a mobile device.</li>
+                    </ul>
+                </li>
+                <li>Breakpoints in responsive web design are browser widths that have what are called <strong>media query declarations</strong>.</li>
+                <li>These change the layout once the browser is within a defined range.</li>
+                <li>Once a breakpoint or browser width is reached, we can activate a set of styles that are targeted for that particular window size.</li>
+                
+                <li>Sometimes, it's practical that content takes up the whole width of the screen, like on a mobile device. But having the same content stretching to the whole width of say your TV screen, often makes less sense.</li>
+                <li>This is why <strong>min and max values</strong> help.
+                    <ul>
+                        <li>For example, having a width of a hundred percent combined with a max width about 1000 pixels would mean the content will fill the screen up to a width of 1000 pixels.</li>
+                    </ul>
+                </li>
+            </ul>
+
         </section>
 
-        <section id="javascript" class="">
+        <!--Javascript Page Content-->
+
+        <section id="javascript" class="page">
             <h1>Javascript Note</h1>
-            <p>Sample Text</p>
+            <ul>
+                <li>JavaScript is a programming language that lets you enhance your HTML with animation, interactivity, and dynamic visual effects.</li>
+                <li>It can make web pages more useful by supplying immediate feedback.
+                    <ul>
+                        <li>For example →
+                            <ul>
+                                <li>A JavaScript powered shopping cart can instantly display a total cost, with taxes and shipping, the moment a visitor selects a product to buy.</li>
+                                <li>JavaScript is used when determining whether the credit card details you entered are valid before transferring those details across the net to the bank for processing.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>JavaScript is now the language of the web.</li>
+                
+                <li>HTML and CSS are concerned with how something is <strong>displayed</strong>, but JavaScript can make <strong>logical decisions</strong>.</li>
+                
+                <li>Web browsers are built to understand HTML and CSS and convert these languages into a visual display on the screen. To do this, the browser uses what's called a <strong>layout or rendering engine</strong>.
+                    <ul>
+                        <li>This is the part of the web browser that understands HTML and CSS.</li>
+                    </ul>
+                </li>
+                <li>A browser also contains what's called a <strong>JavaScript interpreter</strong>.
+                    <ul>
+                        <li>This is the part of the browser that <strong>understands JavaScript</strong> and can <strong>execute</strong> the steps of a JavaScript program.</li>
+                    </ul>
+                </li>
+                
+                <li>A web browser is usually expecting HTML where we <strong>specifically tell</strong> the browser when JavaScript is included.</li>
+                <li>To do this, we use the <strong>&lt;script&gt; tag</strong>.
+                    <ul>
+                        <li>This is similar to the &lt;style&gt; tag used in CSS.</li>
+                        <li>And also, like CSS, JavaScript <strong>can be included</strong> in the <strong>&lt;head&gt;</strong> element or accessed from an external file.</li>
+                        <li>JavaScript doesn't have to be confined to the &lt;head&gt; element though. You can insert script elements in the body area too - creating islands of behaviour, or functionality, throughout the page.</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
-        <section id="git" class="">
+        <!--Git Page Content-->
+
+        <section id="git" class="page">
             <h1>Git Notes</h1>
-            <p>Sample Text</p>
+            <p>Write Notes regarding Git</p>
         </section>
 
-        <section id="Github" class="">
+        <!--Github Page Content-->
+
+        <section id="github" class="page">
             <h1>Github Notes</h1>
-            <p>Sample Text</p>
+            <p>Write Notes regarding Github</p>
         </section>
-
     </main>
 
-<sript src="../JS/main.js"></sript>
+<script src="../JS/main.js"></script>
 </body>
 
 </html>
