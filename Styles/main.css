@@ -134,16 +134,21 @@ h1, h2 {
     height: 40vh;
     width: 70vh;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 22px; 
     border-radius: 4%;
     overflow: hidden;
 }
+
+.horizontal-line {
+    margin-bottom: 25px;
+}
+
 .Element-pics {
     height: 30vh;
     width: 90vh;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 5px; 
     border-radius: 4%;
     overflow: hidden;
@@ -153,7 +158,7 @@ h1, h2 {
     height: 50vh;
     width: 80vh;
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 5px; 
     border-radius: 4%;
     overflow: hidden;
@@ -224,6 +229,70 @@ td {
   vertical-align: top; /* Aligns content to the top */
 }
 
+.html-entities-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1 rem 0;
+    font-family: 'Courier New', monospace;
+}
+
+.html-entities-table .center {
+    text-align: center;
+}
+
+.html-entities-table thead {
+    border-bottom: 5px solid; /* Thicker bottom border */
+}
+
+/* Style ONLY for code display tables */
+table.code-table {
+    width: auto;
+    max-width: 100%; /* Prevents it from overflowing on small screens */
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+table.code-table tr:first-child td {
+    background-color: #404045; /* Dark header background */
+    color: white;
+    font-size: 0.9em;
+    padding: 8px 12px;
+    border: none;
+}
+
+table.code-table tr:last-child td {
+    background-color: #f8f8f8; /* Light code background */
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    line-height: 1.4;
+    border: none;
+}
+
+table.code-table code {
+    background: none;
+    padding: 0;
+    border: none;
+    color: #212327;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Dark mode support */
+body.dark-mode table.code-table tr:first-child td {
+    background-color: #404045;
+}
+
+body.dark-mode table.code-table tr:last-child td {
+    background-color: #212327;
+}
+
+body.dark-mode table.code-table code {
+    color: #e0e0e0;
+}
 
 ul {
     padding-left: 1.5rem; /* Indent all lists */
@@ -300,17 +369,9 @@ ol li li, ul li li {
     color: #404040; /* Match the strong text to the border color */
 }
 
-.html-entities-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1 rem 0;
-    font-family: 'Courier New', monospace;
-}
 
-.html-entities-table .center {
-    text-align: center;
-}
-
-.html-entities-table thead {
-    border-bottom: 5px solid; /* Thicker bottom border */
+.git-style {
+    background-color: #424242; 
+    padding: 5px; 
+    border-radius: 8px;
 }

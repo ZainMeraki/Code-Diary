@@ -74,6 +74,8 @@
                 </ul>
             </ul>
 
+            <hr class="horizontal-line">
+
             <ul>
                 <li>The <strong>paragraph element</strong> is one of the most commonly used elements, and as you might guess it defines a paragraph.
                     <ul>
@@ -82,10 +84,14 @@
                         <img src="../Images/HTML3.png" alt="Paragraph Element" class="Element-pics">
                     </ul>
                 </li>
-                
+
+                <hr class="horizontal-line">
+
                 <li>HTML has <strong>six heading</strong> elements, which are numbered 1 to 6. &lt;h1&gt; is the most significant, and usually contains the title of the content. &lt;h2&gt; represents a section, while &lt;h3&gt; and so on represent identifiers for further subsections.</li>
                 <img src="../Images/HTML4.png" alt="Heading Element" class="Note-pics">
                 
+                <hr class="horizontal-line">
+
                 <li>Lists can be divided into <strong>two types</strong>; unordered and ordered.
                     <ul>
                         <li>Unordered lists display as <strong>bullet points</strong>. The order of the bullet points is deemed unimportant.
@@ -97,6 +103,8 @@
                         <img src="../Images/HTML5.png" alt="List Element" class="Element-pics">
                     </ul>
                 </li>
+
+                <hr class="horizontal-line">
 
                 <li>Elements that <strong>create the spacing below</strong> themselves are called block elements.</li>
                 <li>Block elements are HTML tags that are used to create a container for a specific type of content. These elements take up the full width of their parent container and create a new block formatting context.</li>
@@ -122,6 +130,8 @@
                     <img src="../Images/HTML6.png" alt="Element Tags" class="Element-pics">
                 </li>
                 
+                <hr class="horizontal-line">
+
                 <li><strong>Anchor Element &lt;a&gt; &lt;/a&gt; →</strong>
                     <ul>
                         <li>The famous hyperlink element, also known as the anchor, has an attribute that contains the <strong>address</strong> of the HTML resource that it <strong>links</strong> to. In HTML content, links that are supposed to be interacted with use the anchor element.</li>
@@ -134,6 +144,8 @@
                         </li>
                     </ul>
                 </li>
+
+                <hr class="horizontal-line">
                 
                 <li><strong>Image Element &lt;img&gt; →</strong>
                     <ul>
@@ -148,6 +160,8 @@
                         </li>
                     </ul>
                 </li>
+
+                <hr class="horizontal-line">
                 
                 <li><strong>Neutral Elements &lt;div&gt; &lt;span&gt; →</strong>
                     <ul>
@@ -165,6 +179,8 @@
                         <img src="../Images/HTML9.png" alt="Nuetral Elements" class="Neutral-pics">
                     </ul>
                 </li>
+
+                <hr class="horizontal-line">
                 
                 <li><strong>HTML Entities →</strong>
                     <ul>
@@ -221,6 +237,8 @@
                         </div>
                     </div>
                 </li>
+
+                <hr class="horizontal-line">
             </ul>
 
         </section>
@@ -239,7 +257,7 @@
                     <ul>
                         <li>When using internal CSS, all the elements that match the CSS selector <br>
                             (in this case, the <code>&lt;p&gt;</code> elements) will have the specified styles applied to them.</li>
-                        <table>
+                        <table class="code-table">
                             <tr>
                                 <td>HTML</td>
                             </tr>
@@ -256,7 +274,7 @@
                 <li><strong>Internal CSS:</strong> You can also include CSS inside the head of your HTML document using the "style" tag.<br>
                     This is useful when you want to apply styles to multiple elements within a single HTML file.</li>
                 <ul>
-                    <table>
+                    <table class="code-table">
                         <tr>
                             <td>HTML</td>
                         </tr>
@@ -286,7 +304,7 @@
                         <li>When using external CSS, all the elements that match the selectors in the external CSS file will have the corresponding styles applied to them. 
                             The external CSS file is linked to the HTML document using the <strong>link</strong> tag, which should be placed in the  
                             <code>&lt;head&gt;</code> section of the HTML document.</li>
-                        <table>
+                        <table class="code-table">
                             <tr>
                                 <td>HTML</td>
                             </tr>
@@ -299,7 +317,7 @@
                                 </code></td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="code-table">
                             <tr>
                                 <td>CSS</td>
                             </tr>
@@ -320,7 +338,7 @@
 
                 <li><strong>CSS in Javascript:</strong> You can use JavaScript to apply CSS styles to elements, this is useful in dynamic webpages that change often.
                     <ul>
-                        <table>
+                        <table class="code-table">
                             <tr>
                                 <td>HTML</td>
                             </tr>
@@ -330,7 +348,7 @@
                                 </code></td>
                             </tr>
                         </table>
-                        <table>
+                        <table class="code-table">
                             <tr>
                                 <td>Javascript</td>
                             </tr>
@@ -344,10 +362,9 @@
                         </table>
                     </ul>
                 </li>
-
-                <br>
-                <br>
             </ol>
+
+            <hr>
 
             <h3><strong>ID Attribute →</strong></h3>
                 <ul>
@@ -373,7 +390,7 @@
                 </div>
 
             <br>
-            <br>
+            <hr>
 
             <h3><strong>Class Attribute →</strong></h3>
                 <ul>
@@ -395,6 +412,7 @@
                 </div>
             
             <br>
+            <hr>
 
             <h3>Display Modification →</h3>
             <h4>Responsive Design →</h4>
@@ -433,6 +451,7 @@
                     </ul>
                 </li>
             </ul>
+            <hr>
 
         </section>
 
@@ -482,7 +501,189 @@
 
         <section id="git" class="page">
             <h1>Git Notes</h1>
-            <p>Write Notes regarding Git</p>
+            <h3>What is Git?</h3>
+            <p>Git is a <strong>version control system</strong> that helps you track changes to your code over time. 
+                Think of it like a super-powered "Save" button that remembers every change you've ever made.</p>
+            
+            <hr>
+
+            <h3>Basic Workflow: The Big Three Commands</h3>
+            <p>To send your changes from your computer to GitHub, you always use these three commands:</p>
+            <ol>
+                <li><h4><code class="git-style">git add</code> - Stage Your Changes</h4>
+                    <table class="code-table">
+                        <tr>
+                            <td>bash</td>
+                        </tr>
+                        <tr>
+                            <td><code>
+                                git add filename.txt&nbsp;&nbsp;&nbsp; # Stage one specific file <br>
+                                git add .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Stage ALL changed files
+                            </code></td>
+                        </tr>
+                    </table>
+                        <ul>
+                            <li><strong>What it does:</strong> Selects which changes you want to save</li>
+                            <li><strong>Analogy:</strong> Putting items in a shopping cart 🛒</li>
+                        </ul>
+                </li>
+
+                <li><h4><code class="git-style">git commit</code> - Save a Snapshot</h4>
+                    <table class="code-table">
+                        <tr>
+                            <td>bash</td>
+                        </tr>
+                        <tr>
+                            <td><code>
+                                git commit -m "Added login button"
+                            </code></td>
+                        </tr>
+                    </table>
+                        <ul>
+                            <li><strong>What it does:</strong> Permanently saves your staged changes with a message</li>
+                            <li><strong>Analogy:</strong> Checking out and getting a receipt 🧾</li>
+                            <li><strong>Tip:</strong> Write clear commit messages that explain <strong>what</strong> you changed and <strong>why</strong></li>
+                        </ul>
+                </li>
+
+                <li><h4><code class="git-style">git push</code> - Send to GitHub</h4>
+                    <table class="code-table">
+                        <tr>
+                            <td>bash</td>
+                        </tr>
+                        <tr>
+                            <td><code>
+                                git push origin main&nbsp;&nbsp;&nbsp; # Push to main branch
+                            </code></td>
+                        </tr>
+                    </table>
+                        <ul>
+                            <li><strong>What it does:</strong> Uploads your commits to GitHub</li>
+                            <li><strong>Analogy:</strong> Uploading photos to the cloud ☁️</li>
+                        </ul>
+                </li>
+            </ol>
+
+            <hr>
+
+            <h3>One-Time Setup Commands</h3>
+
+            <h4>Initialize a New Repository</h4>
+            <table class="code-table">
+                <tr>
+                    <td>bash</td>
+                </tr>
+                <tr>
+                    <td><code>
+                        git init
+                    </code></td>
+                </tr>
+            </table>
+            <ul>
+                <li><strong>When to use:</strong> Only once at the beginning of a project</li>
+                <li><strong>What it does:</strong> Turns your folder into a Git repository</li>
+            </ul>
+
+            <h4>Connect to GitHub</h4>
+            <table class="code-table">
+                <tr>
+                    <td>bash</td>
+                </tr>
+                <tr>
+                    <td><code>
+                        git remote add origin https://github.com/yourname/your-repo.git
+                    </code></td>
+                </tr>
+            </table>
+            <ul>
+                <li><strong>When to use:</strong> Only once to link your local project to GitHub</li>
+                <li><strong>What it does:</strong> Creates a connection to your online repository</li>
+            </ul>
+
+            <hr>
+
+            <h3>Checking Status & Viewing History</h3>
+
+            <h4>See What's Changed</h4>
+            <table class="code-table">
+                <tr>
+                    <td>bash</td>
+                </tr>
+                <tr>
+                    <td><code>
+                        git status
+                    </code></td>
+                </tr>
+            </table>
+            <ul>
+                <li><strong>What it shows:</strong>
+                    <ul>
+                        <li>Files you've modified</li>
+                        <li>Files that are staged (in the "shopping cart")</li>
+                        <li>Files that aren't being tracked</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>View Your Commit History</h4>
+            <table class="code-table">
+                <tr>
+                    <td>bash</td>
+                </tr>
+                <tr>
+                    <td><code>
+                        git log
+                    </code></td>
+                </tr>
+            </table>
+            <ul>
+                <li><strong>What it shows:</strong> A list of all your commits with messages, authors, and dates</li>
+                <li><strong>To exit:</strong> Press <code class="git-style">q</code></li>
+            </ul>
+
+            <hr>
+
+            <h3>Key Concepts</h3>
+
+            <h4>Repository (Repo)</h4>
+            <ul>
+                <li>A project folder that Git is tracking</li>
+                <li>Contains all your files and their complete history</li>
+            </ul>
+
+            <h4>Commit</h4>
+            <ul>
+                <li>A saved snapshot of your changes</li>
+                <li>Like a photo of your project at a specific time</li>
+            </ul>
+
+            <h4>Branch</h4>
+            <ul>
+                <li>A separate line of development (like an alternate timeline)</li>
+                <li><code class="git-style">main</code> is the default branch for your stable code</li>
+            </ul>
+
+            <hr>
+
+            <h3>Common Workflow</h3>
+            <ol>
+                <li><strong>Make changes</strong> to your code</li>
+                <li><strong>Check status:</strong> <code class="git-style">git status</code></li>
+                <li><strong>Stage changes:</strong> <code class="git-style">git add .</code></li>
+                <li><strong>Commit changes:</strong> <code class="git-style">git commit -m "Describe your changes"</code></li>
+                <li><strong>Push to GitHub:</strong> <code class="git-style">git push origin main</code></li>
+            </ol>
+
+            <hr>
+
+            <h3>Tips</h3>
+            <ul>
+                <li><strong>Commit often</strong> - Small, frequent commits are better than huge, occasional ones</li>
+                <li><strong>Write good messages</strong> - "Fixed button color" is better than "Made changes"</li>
+            </ul>
+
+            <hr>
+
         </section>
 
         <!--Github Page Content-->
