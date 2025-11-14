@@ -7,6 +7,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
 
+    // Set initial state based on Storage or default to dark mode
+    // Check for a saved mode in the browser's storage and apply it
+    const currentMode = localStorage.getItem('mode') || 'dark'; // Defaults to 'dark' if no mode is found
+    if (currentMode === 'dark') {
+        body.classList.add('dark-mode');
+        modeToggleBtn.textContent = 'Switch to Light Mode';
+    } else {
+        body.classList.remove('dark-mode');
+        modeToggleBtn.textContent = 'Switch to Dark Mode';
+    }
+
+    // Toggle Light/Dark Mode
+    // Event listener for the mode toggle button
+    modeToggleBtn.addEventListener('click', () => {
+        // Toggles the 'dark-mode' class on the body element
+        if (body.classList.toggle('dark-mode')) {
+            localStorage.setItem('mode', 'dark'); // Save the preference to local storage
+            modeToggleBtn.textContent = 'Switch to Light Mode';
+        } else {
+            localStorage.setItem('mode', 'light');
+            modeToggleBtn.textContent = 'Switch to Dark Mode';
+        }
+    });
+
     // Handle Page Navigation
     // Event listener for all navigation links
     navLinks.forEach(link => {
